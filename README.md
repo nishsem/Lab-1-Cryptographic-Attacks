@@ -61,8 +61,11 @@ Rate limiting was encountered; resolved using delays.
 Burp Community Edition has limitations; adapted strategy accordingly.
 
 5. Mitigation Strategies
-Protocol | Vulnerability       | Secure Alternative
-FTP      | Plaintext login     | SFTP / FTPS
-TELNET   | No encryption       | SSH
-HTTP     | Exposes credentials | HTTPS
-SSH      | Brute force risk    | Use Fail2Ban, key-based auth
+
+| Protocol | Vulnerability      | Secure Alternative      |
+|----------|--------------------|--------------------------|
+| FTP      | Plaintext login    | SFTP / FTPS              |
+| TELNET   | No encryption      | SSH                      |
+| HTTP     | Exposes credentials| HTTPS                    |
+| SSH      | Brute force risk   | Fail2Ban, SSH keys       |
+
