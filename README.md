@@ -17,26 +17,17 @@ Analyze weaknesses in each protocol.
 Propose mitigation strategies and secure alternatives.
 
 ⚖️ Tools Used
-
 ### 🛰️ Nmap  
-![nmap](https://nmap.org/images/logo.png)  
-- Network scanning
+<img src="https://nmap.org/images/logo.png" width="150"/>
 
 ### 🐍 Hydra  
-![Hydra](https://upload.wikimedia.org/wikipedia/commons/3/37/Hydra_logo.png)  
-- Brute force tool
-
-### 🐙 Medusa  
-![Medusa](https://raw.githubusercontent.com/jmk-foofus/medusa/master/doc/medusa-logo.png)  
-- Brute force alternative
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Hydra_logo.png/320px-Hydra_logo.png" width="150"/>
 
 ### 🧪 Burp Suite  
-![Burp Suite](https://portswigger.net/cms/images/03/60/3035-featured-370x201.png)  
-- HTTP login brute forcing
+<img src="https://raw.githubusercontent.com/PortSwigger/portswigger-images/main/burp-logo-orange.png" width="150"/>
 
 ### 🧬 Wireshark  
-![Wireshark](https://upload.wikimedia.org/wikipedia/en/6/6e/Wireshark_icon.png)  
-- Network packet analysis
+<img src="https://upload.wikimedia.org/wikipedia/en/6/6e/Wireshark_icon.png" width="120"/>
 
 💡 Lab Tasks Summary
 
