@@ -18,17 +18,25 @@ Propose mitigation strategies and secure alternatives.
 
 ⚖️ Tools Used
 
-nmap - Network scanning
+### 🛰️ Nmap  
+![nmap](https://nmap.org/images/logo.png)  
+- Network scanning
 
-Hydra - Brute force tool
+### 🐍 Hydra  
+![Hydra](https://upload.wikimedia.org/wikipedia/commons/3/37/Hydra_logo.png)  
+- Brute force tool
 
-Medusa - Brute force alternative
+### 🐙 Medusa  
+![Medusa](https://raw.githubusercontent.com/jmk-foofus/medusa/master/doc/medusa-logo.png)  
+- Brute force alternative
 
-Burp Suite - HTTP login brute forcing
+### 🧪 Burp Suite  
+![Burp Suite](https://portswigger.net/cms/images/03/60/3035-featured-370x201.png)  
+- HTTP login brute forcing
 
-Wireshark / tcpdump - Network packet analysis
-
-enum4linux / NetExec - Username enumeration
+### 🧬 Wireshark  
+![Wireshark](https://upload.wikimedia.org/wikipedia/en/6/6e/Wireshark_icon.png)  
+- Network packet analysis
 
 💡 Lab Tasks Summary
 
