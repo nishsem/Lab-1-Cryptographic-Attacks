@@ -15,3 +15,4 @@ The goal of this lab is to explore the vulnerabilities of common network protoco
 ```bash
      nmap -sV -p 21,22,23,80 192.168.X.X
      ```
+![image](https://github.com/user-attachments/assets/ba7a1c88-d02e-4cb1-89cc-0327be8a80ab)
