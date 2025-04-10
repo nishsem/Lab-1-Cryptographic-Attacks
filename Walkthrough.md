@@ -12,3 +12,6 @@ The goal of this lab is to explore the vulnerabilities of common network protoco
 **Steps**:
 1. **Scan the Target VM**: We first performed an `nmap` scan to identify open ports for FTP, SSH, TELNET, and HTTP (ports 21, 22, 23, and 80).
    - Example `nmap` command:
+```bash
+     nmap -sV -p 21,22,23,80 192.168.X.X
+     ```
