@@ -1,70 +1,82 @@
-📊 Network Protocol Vulnerability Lab
+# Lab 1: Cryptographic Attacks: Brute Force and Traffic Analysis on Network Protocols
 
-Overview
+**Time Allocated**: 3 hours  
+**Total Marks**: 15  
 
-This project is a lab-based security assessment of common network protocols (FTP, TELNET, SSH, HTTP) focused on identifying vulnerabilities through brute force attacks and analyzing network traffic. The goal is to demonstrate protocol weaknesses and recommend secure alternatives.
+---
 
-💡 Objectives
+## A. Objective
 
-Enumerate network services and discover usernames.
+The goal of this lab is to explore the vulnerabilities of common network protocols (FTP, TELNET, SSH, HTTP) by performing brute force attacks to recover passwords and then using those credentials to sniff network traffic. You will also analyze the security of these protocols and propose mitigation strategies.
 
-Perform brute force attacks using tools like Hydra and Burp Suite.
+---
 
-Sniff network traffic to detect plaintext vs. encrypted data.
+## B. Lab Tasks
 
-Analyze weaknesses in each protocol.
+### 1. Enumerate the Vulnerable VM to Discover Usernames
+- Identify potential usernames for brute force attacks.
+- Document the usernames you find.
 
-Propose mitigation strategies and secure alternatives.
+### 2. Perform Brute Force Attacks
 
-⚖️ Tools Used
-### 🛰️ Nmap  
-<img src="https://nmap.org/images/logo.png" width="150"/>
+#### 2.1 FTP, TELNET, and SSH
+Use tools like Hydra, Medusa, or NetExec to perform brute force attacks against the following protocols:
+- FTP  
+- TELNET  
+- SSH
 
-### 🐍 Hydra  
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Hydra_logo.png/320px-Hydra_logo.png" width="150"/>
+#### 2.2 HTTP
+- Use Burp Intruder to automate brute force attacks against an HTTP login page.
+- Configure Intruder to test a list of usernames and passwords.
+- Analyze the results to identify successful logins.
 
-### 🧪 Burp Suite  
-<img src="https://raw.githubusercontent.com/PortSwigger/portswigger-images/main/burp-logo-orange.png" width="150"/>
+### 3. Sniff Network Traffic
+- Use the recovered credentials to log in to the respective services.
+- Use Wireshark or tcpdump to capture and analyze network traffic during the session.
+- Identify which protocols transmit data in plaintext and which use encryption.
+- Provide evidence (e.g., screenshots) to prove which protocols are secure and which are not.
 
-### 🧬 Wireshark  
-<img src="https://upload.wikimedia.org/wikipedia/en/6/6e/Wireshark_icon.png" width="120"/>
+### 4. Analyze Problems Encountered
+- Were there any issues during the brute force attacks (e.g., rate limiting, protocol-specific challenges)?
+- How did you resolve these issues?
 
-💡 Lab Tasks Summary
+### 5. Propose Mitigation Strategies
+- For each vulnerable protocol, propose a secure alternative.
+- Explain how these alternatives mitigate the vulnerabilities.
 
-1. Service Enumeration
+### 6. Write a Walkthrough
+Document your entire process in a walkthrough format. Include:
+- Tools used  
+- Commands executed  
+- Screenshots of key steps  
+- Analysis of results  
+- Mitigation strategies  
 
-Scanned target VM for open ports: FTP (21), SSH (22), TELNET (23), HTTP (80).
+---
 
-Discovered usernames via enum4linux and manual login attempts.
+## C. Deliverables
 
-2. Brute Force Attacks
+- **Walkthrough Document**: A detailed markdown file documenting your process, results, and analysis.  
+- **Evidence**: Screenshots of brute force attacks, packet captures, and successful logins.  
+- **GitHub Repository**: Push the walkthrough and evidence to your public GitHub repository.  
+- **Demo and Debrief**: A 5–15 minute live demo and presentation of your findings.  
 
-Used Hydra to brute force FTP, TELNET, and SSH.
+---
 
-Used Burp Suite Intruder to brute force an HTTP login form.
+## D. Demo and Debrief
 
-Identified weak credentials and gained access.
+Each student will perform a 5–15 minute live demo of their lab work, including:
+- A brief explanation of the tools and techniques used  
+- A demonstration of the brute force attack and sniffing process  
+- A summary of findings and mitigation strategies  
 
-3. Packet Sniffing
+The debrief will assess your understanding of the topic while enhancing your public speaking and presentation skills.
 
-Captured login sessions with Wireshark.
+---
 
-Verified that FTP, TELNET, and HTTP transmit data in plaintext.
+## E. Submission Instructions
 
-Confirmed that SSH encrypts all data.
-
-4. Issues and Resolutions
-
-Rate limiting was encountered; resolved using delays.
-
-Burp Community Edition has limitations; adapted strategy accordingly.
-
-5. Mitigation Strategies
-
-| Protocol | Vulnerability      | Secure Alternative      |
-|----------|--------------------|--------------------------|
-| FTP      | Plaintext login    | SFTP / FTPS              |
-| TELNET   | No encryption      | SSH                      |
-| HTTP     | Exposes credentials| HTTPS                    |
-| SSH      | Brute force risk   | Fail2Ban, SSH keys       |
-
+- Create a public GitHub repository.  
+- Push your walkthrough (in Markdown format) and evidence (screenshots) to the repository.  
+- Submit the repository link to your instructor.  
+- Be prepared to deliver a live demo and debrief during the lab session.
