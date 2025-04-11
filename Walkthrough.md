@@ -16,3 +16,19 @@ The goal of this lab is to explore the vulnerabilities of common network protoco
      nmap -sV -p 21,22,23,80 192.168.X.X
 ```
 ![image](https://github.com/user-attachments/assets/ba7a1c88-d02e-4cb1-89cc-0327be8a80ab)
+![Screenshot 2025-04-10 185403](https://github.com/user-attachments/assets/509e08b0-6fcf-4b6e-b6ca-29bda5de624e)
+
+### 2. Perform Brute Force Attacks
+
+#### 2.1 FTP, TELNET, and SSH
+
+**Assumed Username**: Based on enumeration or hints from the VM, we assumed the username is `msfadmin`.
+
+**Tool Used**: Hydra  
+**Wordlist Used**: `/usr/share/wordlists/rockyou.txt`
+
+**Commands Used**:
+
+- **FTP**:
+  ```bash
+  hydra -l msfadmin -P /usr/share/wordlists/rockyou.txt ftp://192.168.X.X
